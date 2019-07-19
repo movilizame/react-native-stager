@@ -5,7 +5,6 @@ import {
   View,
   ScrollView,
   TouchableOpacity,
-  KeyboardAvoidingView,
   InteractionManager,
   StyleSheet,
   Button,
@@ -460,11 +459,11 @@ export class Stager extends React.Component<StagerProps, StagerState> {
 
   render(){
     return (
-      <KeyboardAvoidingView behavior="position" style={styles.stageContainer} keyboardVerticalOffset={-15}>
+      <View style={styles.stageContainer}>
         {this.state.hasProgress ? this.state.hasProgress : this.progress()}
         {this.state.time && this.state.stage}
         {this.state.hasButtons ? this.state.hasButtons : this.buttons()}
-      </KeyboardAvoidingView>
+      <View>
     )
   }
 }
