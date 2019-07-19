@@ -29,7 +29,10 @@
     "url": "https://github.com/pocesar/react-native-stager/issues"
   },
   "homepage": "https://github.com/pocesar/react-native-stager#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@types/react": "^16.8.23",
+    "@types/react-native": "^0.60.2"
+  },
   "peerDependencies": {
     "react-native": "*",
     "react": "*",

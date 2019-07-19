@@ -4,7 +4,8 @@
     "declaration": true,
     "outDir": "./lib",
     "declarationDir": "./lib",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "jsx": "react"
   },
   "files": [
     "./src/index.tsx"

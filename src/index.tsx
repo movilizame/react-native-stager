@@ -463,7 +463,7 @@ export class Stager extends React.Component<StagerProps, StagerState> {
         {this.state.hasProgress ? this.state.hasProgress : this.progress()}
         {this.state.time && this.state.stage}
         {this.state.hasButtons ? this.state.hasButtons : this.buttons()}
-      <View>
+      </View>
     )
   }
 }
