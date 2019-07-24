@@ -150,16 +150,17 @@ export class Stage extends React.Component<StageProps, never> {
 
   render() {
     const { children } = this.props
-
+    /* 
+          keyboardShouldPersistTaps={'handled'} 
+          contentContainerStyle={styles.scrollviewContainer}
+    */
     return (
       <View>
-        <ScrollView
-          keyboardShouldPersistTaps={'handled'}
-          contentContainerStyle={styles.scrollviewContainer}
+        <View
           style={[styles.scrollview, this.props.maxHeight ? { maxHeight: this.props.maxHeight() } : {}]}
           >
           {children(this.passProps)}
-        </ScrollView>
+        </View>
       </View>
       )
   }
