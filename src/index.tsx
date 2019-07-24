@@ -157,7 +157,7 @@ export class Stage extends React.Component<StageProps, never> {
     return (
       <View>
         <View
-          style={[styles.scrollview, this.props.maxHeight ? { maxHeight: this.props.maxHeight() } : {}]}
+          style={[styles.scrollviewContainer, styles.scrollview, { height: Dimensions.get('window').height }]}
           >
           {children(this.passProps)}
         </View>
